@@ -1,0 +1,48 @@
+* {
+    font-family: 'Grenze Gotisch', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/dd/be/ba/ddbebab2ffc0696a601208c599941d45.jpg");
+    color: blanchedalmond;
+    background-size: cover;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.score {
+    text-align: center;
+}
+
+.board {
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    display: grid;
+    /* background-color: black; */
+    gap: 2px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.removed {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.card-up, .card-down {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%; 
+    height: auto;
+    pointer-events: none;
+}
